@@ -9,7 +9,7 @@ for (let i = 0; i < projects.length; i++){
     let projContent = document.createElement("p");
     projContent.textContent = projects[i][y];
     let projectCard =document.createElement("div");
-    projectCard.className = "card";
+    projectCard.className = "cardStyle";
     projectCard.appendChild(projTitle);
     projectCard.appendChild(projContent);
     projContainer.appendChild(projectCard);

@@ -14,23 +14,32 @@
 <body>
     <div class="side-bar">
         <div class="title-container">
-            <div class="logo-container">img</div>
+            <div class="logo-container"><img class="img-fluid logo" src="./img/dashboard-svgrepo-com.svg" height="96px" width="96px"></div>
             <div class="title-words"><h2>Dashboard</h2></div>
         </div>
         <div class="nav-container">
-            <div class="nav-icons side-icon">i</div>
-            <div class="nav-buttons side-button">button</div>
+            <div class="nav-buttons">
+                <a href="#" class="nav-btn"><img src="./img/home-svgrepo-com.svg" class="img-fluid" alt="" height="30px" width="30px"><span>Home</span></a>
+                <a href="#" class="nav-btn"><img src="./img/profile-svgrepo-com.svg" class="img-fluid" alt="" height="30px" width="30px"><span>Profile</span></a>
+                <a href="#" class="nav-btn"><img src="./img/message-right-solid-svgrepo-com.svg" class="img-fluid" alt="" height="30px" width="30px"><span>Messages</span></a>
+                <a href="#" class="nav-btn"><img src="./img/history-round-svgrepo-com.svg" class="img-fluid" alt="" height="30px" width="30px"><span>History</span></a>
+                <a href="#" class="nav-btn"><img src="./img/copybook-lesson-task-homework-svgrepo-com.svg" class="img-fluid" alt="" height="30px" width="30px"><span>Tasks</span></a>
+                <a href="#" class="nav-btn"><img src="./img/people-svgrepo-com.svg" class="img-fluid" alt="" height="30px" width="30px"><span>Communities</span></a>
+            </div>
         </div>
         <div class="help-container">
-            <div class="help-icons side-icon">i</div>
-            <div class="nav-icons side-button">button</div>
+            <div class="nav-buttons">
+                <a href="#" class="nav-btn"><img src="./img/settings-svgrepo-com.svg" class="img-fluid" alt="" height="30px" width="30px"><span>Settings</span></a>
+                <a href="#" class="nav-btn"><img src="./img/circle-help-svgrepo-com.svg" class="img-fluid" alt="" height="30px" width="30px"><span>Support</span></a>
+                <a href="#" class="nav-btn"><img src="./img/privacy-svgrepo-com.svg" class="img-fluid" alt="" height="30px" width="30px"><span>Privacy</span></a>
+            </div>
         </div>
     </div>
     <div class="main-container">
         <div class="header">
             <div class="top-head">
                 <div class="search-container">
-                    <label for="search" class="search-label">Search:</label>
+                    <img class="img-fluid" src="./img/magnify.svg" height="30px" width="30px">
                     <input type="search" name="search" id="search">
                 </div>
                 <a href="#" id="notifications"><img class="img-fluid" src="./img/bell-ring.svg" height="20px" width="20px"></a>
@@ -41,22 +50,22 @@
             </div>
             <div class="mid-head">
                 <div class="intro">
-                    <img class="img-fluid icon" src="#" height="80px" width="80px">
+                    <img class="img-fluid icon" src="./img/face-woman.svg" height="80px" width="80px">
                     <div>
                         <p class="small-intro-words">Hi there,</p>
                         <h4 id="profileName">Kassidy Montano (<span id="username">@kassyj13</span>)</h4>
                     </div>
                 </div>
                 <div class="head-button-container">
-                    <button class="head-botton" id="new">New</button>
-                    <button class="head-botton" id="upload">Upload</button>
-                    <button class="head-botton" id="share">Share</button>
+                    <button class="head-button" id="new">New</button>
+                    <button class="head-button" id="upload">Upload</button>
+                    <button class="head-button" id="share">Share</button>
                 </div>
             </div>
         </div>
         <div class="content">
             <div class="projects-container">
-                <h6 class="main-titles">Your Projects</h6>
+                <h6 class="main-titles project-title">Your Projects</h6>
                 <div id="projects"></div>
             </div>
             <div class="annoucement-container">
