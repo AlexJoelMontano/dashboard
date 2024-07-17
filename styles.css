@@ -16,18 +16,15 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 html {
   height: 100%;
-  width: 100%;
-}
+  width: 100%; }
 
 body {
   display: grid;
-  grid-template-columns: 1fr 4fr;
-}
+  grid-template-columns: 1fr 4fr; }
 
 .side-bar {
   display: grid;
@@ -35,35 +32,29 @@ body {
   background-color: #9f1239;
   color: #fff1f2;
   padding-inline: 8%;
-  border-right: solid 1px rgb(96, 96, 96);
-}
+  border-right: solid 1px #606060; }
 
 .nav-buttons {
   display: grid;
   grid-template-rows: repeat(auto-fill);
-  row-gap: 10%;
-}
+  row-gap: 10%; }
 
 .nav-btn {
   width: 80%;
   color: #fff1f2;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .nav-btn:hover {
   color: #fecdd3;
-  transform: scale(102%);
-}
+  transform: scale(102%); }
 
 .nav-btn > span {
-  margin-left: 12%;
-}
+  margin-left: 12%; }
 
 .help-container {
   display: grid;
   grid-template-rows: repeat(auto-fill);
-  row-gap: 2%;
-}
+  row-gap: 2%; }
 
 .title-container {
   display: grid;
@@ -71,82 +62,69 @@ body {
   justify-content: center;
   align-content: start;
   padding-top: 6%;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .logo-container {
   display: flex;
   height: 100%;
-  align-items: center;
-}
+  align-items: center; }
 
 .title-words > h2 {
   display: flex;
   height: 100%;
-  align-items: center;
-}
+  align-items: center; }
 
 .main-container {
   display: grid;
-  grid-template-rows: 1fr 5fr;
-}
+  grid-template-rows: 1fr 5fr; }
 
 .header {
   display: grid;
-  grid-template-rows: 1fr 2fr;
-}
+  grid-template-rows: 1fr 2fr; }
 
 .top-head {
   display: grid;
   grid-template-columns: 4fr 1fr 2fr;
   align-items: center;
   background-color: #fb7185;
-  border-bottom: solid 1px rgb(96, 96, 96);
-}
+  border-bottom: solid 1px #606060; }
 
 .search-container {
-  margin-left: 2%;
-}
+  margin-left: 2%; }
 
 #notifications {
   display: flex;
-  justify-content: end;
-}
+  justify-content: end; }
 
 #notifications > img:hover {
-  transform: scale(116%);
-}
+  transform: scale(116%); }
 
 #search {
   min-width: 70%;
   border-radius: 14px;
-  background-color: #ffe4e6;
-}
+  background-color: #ffe4e6; }
 
 #search:focus {
-  background-color: #fff1f2;
-}
+  background-color: #fff1f2; }
 
 .profile {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  justify-content: space-evenly;
+  padding-inline: 10%;
+  align-items: center; }
 
 .mid-head {
   display: grid;
   grid-template-columns: 3fr 2fr;
   align-items: end;
   background-color: #fff1f2;
-  border-bottom: solid 1px rgb(96, 96, 96);
-}
+  border-bottom: solid 1px #606060; }
 
 .intro {
   width: max-content;
   display: grid;
   grid-template-columns: 100px 2fr;
-  margin-bottom: 2%;
-}
+  margin-bottom: 2%; }
 
 .content {
   display: grid;
@@ -154,22 +132,20 @@ body {
   grid-template-rows: 1fr 1fr;
   background-color: #fecdd3;
   padding-top: 4%;
-  padding-left: 2%;
-  box-shadow: inset 0px 1px 6px 0px;
-}
+  padding-inline: 2%;
+  box-shadow: inset 0px 1px 6px 0px; }
 
 .trending-container {
+  margin-top: 6%;
   grid-row-start: 2;
-  grid-column-start: 2;
-}
+  grid-column-start: 2; }
 
 #projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, 46%);
   gap: 8% 4%;
   justify-content: left;
-  padding-top: 4%;
-}
+  padding-top: 2%; }
 
 .cardStyle {
   background-color: #fff1f2;
@@ -177,27 +153,48 @@ body {
   border: 2px solid #4c0519;
   padding-inline: 4%;
   padding-block: 4%;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .head-button-container {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 6%;
-}
+  margin-bottom: 6%; }
 
 button.head-button {
   border-radius: 16px;
-  background-color: #4c0519;
+  background-color: #9f1239;
   color: #fff1f2;
   width: 6rem;
   height: 2rem;
-  font-size: calc(0.46rem + 0.46vw);
-}
+  font-size: calc(0.46rem + 0.46vw); }
 
 button.head-button:hover {
   transform: scale(102%);
-  background-color: #881337;
-}
+  background-color: #881337; }
+
+button.head-button:active {
+  transform: translateY(2px); }
+
+#annoucements {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: calc(0.4rem + 0.4vw);
+  border-radius: 8px;
+  padding-top: 6%;
+  row-gap: 6px; }
+
+.annoucement {
+  border: ridge 2px #4c0519;
+  border-radius: 6px;
+  padding-block: 6%;
+  padding-inline: 6%;
+  background-color: #fff1f2;
+  cursor: pointer; }
+
+.annoucement > h6 {
+  font-size: calc(0.5rem + 0.5vw);
+  padding-bottom: 6%;
+  border-bottom: solid 1px #606060; }
 
 /*# sourceMappingURL=styles.css.map */

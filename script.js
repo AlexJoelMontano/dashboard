@@ -14,3 +14,20 @@ for (let i = 0; i < projects.length; i++){
     projectCard.appendChild(projContent);
     projContainer.appendChild(projectCard);
 }
+
+let annouceContainer = document.querySelector("#annoucements");
+
+annoucements = [["Site Maintenance","Hello everyone, we are going to have a site outage from 3am-4am EST."],["New Launch this month","We will have the new product launch later this month be on the lookout for needed changes."],["New training ","There is new mandated training due this month make sure you are on the look out for the email."]];
+
+for (let i = 0; i < annoucements.length; i++){
+    let annouceTitle = document.createElement("h6");
+    annouceTitle.textContent = annoucements[i][x];
+    annouceTitle.style.fontWeight = "600";
+    let annouceContent = document.createElement("p");
+    annouceContent.textContent = annoucements[i][y];
+    let annoucement = document.createElement("div");
+    annoucement.className = "annoucement";
+    annoucement.appendChild(annouceTitle);
+    annoucement.appendChild(annouceContent);
+    annouceContainer.appendChild(annoucement);
+}

@@ -27,6 +27,8 @@ $dark-rose:#4c0519;
 $dark-rose-shaded:#881337;
 $rose-bg-img:url("./img/lilac.avif");
 $button-font-size: calc(0.46rem + 0.46vw);
+$small-font-size: calc(0.4rem + 0.4vw);
+$small-heading: calc(0.5rem + 0.5vw);
 
 html{
     height: 100%;
@@ -119,7 +121,8 @@ body{
 }
 .profile{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    padding-inline: 10%;
     align-items: center;
 }
 .mid-head{
@@ -141,10 +144,11 @@ body{
     grid-template-rows: 1fr 1fr;
     background-color: $very-light-rose;
     padding-top: 4%;
-    padding-left: 2%;
+    padding-inline: 2%;
     box-shadow: inset 0px 1px 6px 0px;
 }
 .trending-container{
+    margin-top: 6%;
     grid-row-start: 2;
     grid-column-start: 2;
 }
@@ -153,7 +157,7 @@ body{
     grid-template-columns: repeat(auto-fill,46%);
     gap: 8% 4%;
     justify-content: left;
-    padding-top: 4%;
+    padding-top: 2%;
 }
 .cardStyle{
     background-color: $white-rose;
@@ -170,7 +174,7 @@ body{
 }
 button.head-button{
     border-radius: 16px;
-    background-color: $dark-rose;
+    background-color: $deep-rose;
     color: $white-rose;
     width: 6rem;
     height: 2rem;
@@ -180,4 +184,28 @@ button.head-button:hover{
     transform: scale(102%);
     background-color: $dark-rose-shaded;
 }
-
+button.head-button:active{
+    transform: translateY(2px);
+}
+#annoucements{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: $small-font-size;
+    border-radius: 8px;
+    padding-top: 6%;
+    row-gap: 6px;
+}
+.annoucement{
+    border: ridge 2px $dark-rose;
+    border-radius: 6px;
+    padding-block: 6%;
+    padding-inline: 6%;
+    background-color: $white-rose;
+    cursor: pointer;
+}
+.annoucement>h6{
+    font-size: $small-heading;
+    padding-bottom: 6%;
+    border-bottom: solid 1px rgb(96,96,96);
+}
