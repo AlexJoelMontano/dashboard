@@ -190,6 +190,8 @@ body{
 .bar{
     grid-area:bar;
     background-color: $bar-color;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
 }
 .proj-buttons{
     width: 100%;
