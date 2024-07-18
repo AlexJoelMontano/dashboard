@@ -18,13 +18,15 @@ time, mark, audio, video{
 	font: inherit;
 	vertical-align: baseline;
 }
-$white-rose:#fff1f2;
-$very-light-rose:#fecdd3;
-$light-rose:#fb7185;
-$rose:#e11d48;
-$deep-rose:#9f1239;
-$dark-rose:#4c0519;
-$dark-rose-shaded:#881337;
+$white-rose:#faf5ff;
+$very-light-shade:#e3d0f7;
+$very-light-rose:#e3d0f7;
+$light-rose:#c084fc;
+$rose:#5b21b6;
+$deep-rose:#36196b;
+$dark-rose:#082f49;
+$dark-rose-shaded:#4c1d95;
+$bar-color:#9333ea;
 $rose-bg-img:url("./img/lilac.avif");
 $button-font-size: calc(0.46rem + 0.46vw);
 $small-font-size: calc(0.4rem + 0.4vw);
@@ -49,7 +51,7 @@ body{
 .nav-buttons{
     display: grid;
     grid-template-rows: repeat(auto-fill);
-    row-gap: 10%;
+    row-gap: 16%;
 }
 .nav-btn{
     width: 80%;
@@ -57,8 +59,8 @@ body{
     text-decoration: none;
 }
 .nav-btn:hover{
-    color: $very-light-rose;
-    transform: scale(102%);
+    color: $light-rose;
+    transform: scale(106%);
 }
 .nav-btn>span{
     margin-left: 12%;
@@ -98,7 +100,7 @@ body{
     display: grid;
     grid-template-columns: 4fr 1fr 2fr;
     align-items: center;
-    background-color: $light-rose;
+    background-color: $very-light-shade;
     border-bottom: solid 1px rgb(96,96,96);
 }
 .search-container{
@@ -114,10 +116,10 @@ body{
 #search{
     min-width: 70%;
     border-radius: 14px;
-    background-color:#ffe4e6;
+    background-color:#dcb9ff;
 }
 #search:focus{
-    background-color: $white-rose;
+    background-color:#dcb9ffb5;
 }
 .profile{
     display: flex;
@@ -136,12 +138,15 @@ body{
     width: max-content;
     display:grid;
     grid-template-columns: 100px 2fr;
+    margin-left: 4%;
     margin-bottom: 2%;
 }
 .content{
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 1fr 1fr;
+    grid-template-areas: "project annoucements"
+    "project trending";
     background-color: $very-light-rose;
     padding-top: 4%;
     padding-inline: 2%;
@@ -149,23 +154,63 @@ body{
 }
 .trending-container{
     margin-top: 6%;
-    grid-row-start: 2;
-    grid-column-start: 2;
+    grid-area: trending;
+}
+.projects-container{
+    grid-area: project;
+    overflow-y: scroll;
+    height: 100%;
 }
 #projects{
     display: grid;
     grid-template-columns: repeat(auto-fill,46%);
     gap: 8% 4%;
+    height: 90%;
     justify-content: left;
     padding-top: 2%;
+    overflow-y: scroll;
 }
 .cardStyle{
+    display: grid;
+    grid-template-columns: 2% 1fr;
+    grid-template-rows: 2fr 3fr 1fr;
+    grid-template-areas: "bar title"
+    "bar wording"
+    "bar buttons";
     background-color: $white-rose;
     border-radius: 8px;
     border: 2px solid $dark-rose;
-    padding-inline: 4%;
-    padding-block: 4%;
+    padding-right: 6%;
+    height: 14rem;
+    column-gap: 6%;
+}
+.proj>h6{
+    grid-area: title;
+}
+.bar{
+    grid-area:bar;
+    background-color: $bar-color;
+}
+.proj-buttons{
+    width: 100%;
+    justify-content: end;
+    display: grid;
+    grid-template-columns: 30px 30px 30px;
+    column-gap: 6%;
+    grid-area: buttons;
+}
+.proj>p{
+    grid-area: wording;
+}
+.cardButton{
     cursor: pointer;
+    background-color: none;
+}
+.btn-logo:hover{
+    transform: scale(116%);
+}
+.btn-logo:active{
+    transform: translateY(2px);
 }
 .head-button-container{
     display: flex;
@@ -187,6 +232,9 @@ button.head-button:hover{
 button.head-button:active{
     transform: translateY(2px);
 }
+.annoucement-container{
+    grid-area: annoucements;
+}
 #annoucements{
     display: flex;
     flex-direction: column;
@@ -194,7 +242,8 @@ button.head-button:active{
     font-size: $small-font-size;
     border-radius: 8px;
     padding-top: 6%;
-    row-gap: 6px;
+    row-gap: 16px;
+    
 }
 .annoucement{
     border: ridge 2px $dark-rose;
