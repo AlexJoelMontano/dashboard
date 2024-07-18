@@ -92,3 +92,10 @@ for (let profile of profiles){
 
 }
 
+let imgElements = document.querySelectorAll(".profilePicture");
+
+for (let element of imgElements){
+    element.src = "./img/black-cat.jpg"
+    element.style.borderRadius = "100%";
+}
+
