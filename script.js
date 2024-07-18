@@ -1,6 +1,6 @@
 let projContainer = document.querySelector("#projects");
 
-projects = [["Project 1","Thank you for kassidy for believing in me"],["Project 2","She is amazing and I know its hard to do this"],["Project 3","I love her and she supports me so much."],["Project 4","Once I finaly get this new job I am going to spoil her."],["Project 5","Kassidy Seriously thank you for everything you have done!"],["Project 6","I have the best wife and the bestest friend anyone else could have asked for"],["Project 7","I will be a web developer for my family and for my future"]];
+projects = [["Custom color palatte","We are thinking about creating a new theme and color palatte for our website to improve clarity and brand adhesion."],["New photos needed","Currently we need to work on a project to invest in acquiring higher quality photos to edit"],["Newly added SVG Icons","We have been working steady and hard in building a new library of custom svg icons for the website"],["Fixing UI and add space","Currently the website is flooded with ads and we need to refresh their current locations and how they affect user experience"],["Preparing for new product launch","Subject matter expert training required to allow equal growth as a team dynamic on the new product."],["Bug IOS-420","Working on fixing the new iPhone bug in our website that slows down interaction and user experience."],["Lets get Hired","Thank you for review my project hopefully someday this could help me get a job and I appreciate you actually reading this far!"]];
 buttonLogos = ["./img/star-plus-outline.svg","./img/eye-plus-outline.svg","./img/export-variant.svg"]
 let x = 0
 let y = 1
@@ -20,8 +20,11 @@ for (let i = 0; i < projects.length; i++){
     let projTitle = document.createElement("h6");
     projTitle.textContent= projects[i][x];
     projTitle.style.marginTop = "6%"
+    projTitle.style.fontWeight = 600;
+    projTitle.style.fontSize = "calc(0.66rem + 0.7vw)";
 
     let projContent = document.createElement("p");
+    projContent.style.fontSize = "calc(0.5rem + 0.5vw)";
     projContent.textContent = projects[i][y];
 
     let btnContainer = document.createElement("div");
@@ -66,4 +69,26 @@ for (let i = 0; i < annoucements.length; i++){
     annouceContainer.appendChild(annoucement);
 }
 
-trending = [""]
+let trendContainer = document.querySelector("#trending");
+
+profilePics = {"kassyj13":"./img/black-cat.jpg","alexthegreat":"./img/vw-gti.jpg","blueturbo11":"./img/rally-GTI.jpg", "elliebell02":"./img/unicorn.jpg"};
+
+profiles = ["kassyj13","alexthegreat","blueturbo11","elliebell02"];
+
+for (let profile of profiles){
+    let usrCard = document.createElement("div");
+    let usrName = document.createElement("h6");
+    let profilePhoto = document.createElement("img");
+    usrName.textContent = `@${profile}`;
+    usrName.style.alignContent = "center"
+    profilePhoto.src = profilePics[profile];
+    profilePhoto.style.height = "50px";
+    profilePhoto.style.width = "50px";
+    profilePhoto.style.borderRadius = "100%";
+    usrCard.className = "trendCard";
+    usrCard.appendChild(profilePhoto);
+    usrCard.appendChild(usrName);
+    trendContainer.appendChild(usrCard);
+
+}
+
