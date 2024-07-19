@@ -156,6 +156,7 @@ body{
     padding-top: 4%;
     padding-inline: 2%;
     box-shadow: inset 0px 1px 6px 0px;
+    border-radius: 6px;
 }
 .trending-container{
     margin-top: 6%;
@@ -188,6 +189,7 @@ body{
     padding-right: 6%;
     height: 14rem;
     column-gap: 6%;
+    box-shadow: 2px 2px 12px 0px rgb(96, 96, 96);
 }
 .proj>h6{
     grid-area: title;

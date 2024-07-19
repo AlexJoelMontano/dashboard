@@ -16,15 +16,18 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 html {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+}
 
 body {
   display: grid;
-  grid-template-columns: 1fr 4fr; }
+  grid-template-columns: 1fr 4fr;
+}
 
 .side-bar {
   display: grid;
@@ -33,29 +36,35 @@ body {
   color: #faf5ff;
   padding-inline: 8%;
   row-gap: 4%;
-  border-right: solid 1px #606060; }
+  border-right: solid 1px rgb(96, 96, 96);
+}
 
 .nav-buttons {
   display: grid;
   grid-template-rows: repeat(auto-fill);
-  row-gap: 16%; }
+  row-gap: 16%;
+}
 
 .nav-btn {
   width: 80%;
   color: #faf5ff;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .nav-btn:hover {
   color: #c084fc;
-  transform: scale(106%); }
+  transform: scale(106%);
+}
 
 .nav-btn > span {
-  margin-left: 12%; }
+  margin-left: 12%;
+}
 
 .help-container {
   display: grid;
   grid-template-rows: repeat(auto-fill);
-  row-gap: 2%; }
+  row-gap: 2%;
+}
 
 .title-container {
   display: grid;
@@ -63,75 +72,86 @@ body {
   justify-content: center;
   align-content: start;
   padding-top: 6%;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .logo-container {
   display: flex;
   height: 100%;
-  align-items: center; }
+  align-items: center;
+}
 
 .title-words > h2 {
   display: flex;
   height: 100%;
   align-items: center;
   font-size: calc(1.26rem + 1vw);
-  font-weight: 600; }
+  font-weight: 600;
+}
 
 .main-container {
   display: grid;
-  grid-template-rows: 1fr 5fr; }
+  grid-template-rows: 1fr 5fr;
+}
 
 .header {
   display: grid;
-  grid-template-rows: 1fr 2fr; }
+  grid-template-rows: 1fr 2fr;
+}
 
 .top-head {
   display: grid;
   grid-template-columns: 4fr 1fr 2fr;
   align-items: center;
   background-color: #e3d0f7;
-  border-bottom: solid 1px #606060; }
+  border-bottom: solid 1px rgb(96, 96, 96);
+}
 
 .search-container {
-  margin-left: 2%; }
+  margin-left: 2%;
+}
 
 #notifications {
   display: flex;
-  justify-content: end; }
+  justify-content: end;
+}
 
 #notifications > img:hover {
-  transform: scale(116%); }
+  transform: scale(116%);
+}
 
 #search {
   min-width: 70%;
   border-radius: 14px;
-  background-color: #dcb9ff; }
+  background-color: #dcb9ff;
+}
 
 #search:focus {
-  background-color: #dcb9ffb5; }
+  background-color: rgba(220, 185, 255, 0.7098039216);
+}
 
 .profile {
   display: flex;
   justify-content: space-evenly;
   padding-inline: 10%;
-  align-items: center; }
+  align-items: center;
+}
 
 .mid-head {
   display: grid;
   grid-template-columns: 3fr 2fr;
   align-items: end;
   background-color: #faf5ff;
-  border-bottom: solid 1px #606060; }
+  border-bottom: solid 1px rgb(96, 96, 96);
+}
 
 .intro {
   width: max-content;
   display: grid;
   grid-template-columns: 100px 2fr;
   margin-left: 4%;
-  margin-bottom: 2%; }
-
-h4 {
-  font-weight: 600; }
+  margin-bottom: 2%;
+}
 
 .content {
   display: grid;
@@ -142,16 +162,20 @@ h4 {
   column-gap: 2%;
   padding-top: 4%;
   padding-inline: 2%;
-  box-shadow: inset 0px 1px 6px 0px; }
+  box-shadow: inset 0px 1px 6px 0px;
+  border-radius: 6px;
+}
 
 .trending-container {
   margin-top: 6%;
-  grid-area: trending; }
+  grid-area: trending;
+}
 
 .projects-container {
   grid-area: project;
   overflow-y: scroll;
-  height: 100%; }
+  height: 100%;
+}
 
 #projects {
   display: grid;
@@ -160,7 +184,8 @@ h4 {
   height: 90%;
   justify-content: left;
   padding-top: 2%;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+}
 
 .cardStyle {
   display: grid;
@@ -172,16 +197,20 @@ h4 {
   border: 2px solid #082f49;
   padding-right: 6%;
   height: 14rem;
-  column-gap: 6%; }
+  column-gap: 6%;
+  box-shadow: 2px 2px 12px 0px rgb(96, 96, 96);
+}
 
 .proj > h6 {
-  grid-area: title; }
+  grid-area: title;
+}
 
 .bar {
   grid-area: bar;
   background-color: #9333ea;
   border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px; }
+  border-bottom-left-radius: 6px;
+}
 
 .proj-buttons {
   width: 100%;
@@ -189,25 +218,31 @@ h4 {
   display: grid;
   grid-template-columns: 30px 30px 30px;
   column-gap: 6%;
-  grid-area: buttons; }
+  grid-area: buttons;
+}
 
 .proj > p {
-  grid-area: wording; }
+  grid-area: wording;
+}
 
 .cardButton {
   cursor: pointer;
-  background-color: none; }
+  background-color: none;
+}
 
 .btn-logo:hover {
-  transform: scale(116%); }
+  transform: scale(116%);
+}
 
 .btn-logo:active {
-  transform: translateY(2px); }
+  transform: translateY(2px);
+}
 
 .head-button-container {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 6%; }
+  margin-bottom: 6%;
+}
 
 button.head-button {
   border-radius: 16px;
@@ -215,17 +250,21 @@ button.head-button {
   color: #faf5ff;
   width: 6rem;
   height: 2rem;
-  font-size: calc(0.46rem + 0.46vw); }
+  font-size: calc(0.46rem + 0.46vw);
+}
 
 button.head-button:hover {
   transform: scale(102%);
-  background-color: #4c1d95; }
+  background-color: #4c1d95;
+}
 
 button.head-button:active {
-  transform: translateY(2px); }
+  transform: translateY(2px);
+}
 
 .annoucement-container {
-  grid-area: annoucements; }
+  grid-area: annoucements;
+}
 
 #annoucements {
   display: flex;
@@ -234,7 +273,8 @@ button.head-button:active {
   font-size: calc(0.4rem + 0.4vw);
   border-radius: 8px;
   padding-top: 6%;
-  row-gap: 16px; }
+  row-gap: 16px;
+}
 
 .annoucement {
   border: ridge 2px #082f49;
@@ -242,18 +282,21 @@ button.head-button:active {
   padding-block: 6%;
   padding-inline: 6%;
   background-color: #faf5ff;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .annoucement > h6 {
   font-size: calc(0.5rem + 0.5vw);
   padding-bottom: 6%;
-  border-bottom: solid 1px #606060; }
+  border-bottom: solid 1px rgb(96, 96, 96);
+}
 
 #trending {
   display: grid;
   grid-template-rows: repeat(auto-fill);
   row-gap: 6%;
-  margin-top: 6%; }
+  margin-top: 6%;
+}
 
 .trendCard {
   display: grid;
@@ -267,13 +310,16 @@ button.head-button:active {
   width: 100%;
   border: 2px ridge #36196b;
   border-radius: 6px;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .trendCard > h6 {
   font-size: calc(0.5rem + 0.5vw);
-  font-weight: 600; }
+  font-weight: 600;
+}
 
 .trendCard:hover {
-  background-color: #f2eafb; }
+  background-color: #f2eafb;
+}
 
 /*# sourceMappingURL=styles.css.map */
